@@ -16,7 +16,7 @@ node {
     stage('Test image') {
         
         app.inside {
-            echo "Tests passed"
+            echo "Tests passed in JS"
         }
     }
 
@@ -28,6 +28,6 @@ node {
             app.push("${env.BUILD_NUMBER}")
             app.push("latest")
             } 
-                echo "Trying to Push Docker Build to DockerHub"
+                echo "Trying to Push Docker Build to DockerHub Repsository"
     }
 }
